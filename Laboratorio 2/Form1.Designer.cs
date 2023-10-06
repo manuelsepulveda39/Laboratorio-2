@@ -36,6 +36,8 @@
             this.errores = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.solucion = new System.Windows.Forms.Label();
+            this.intercepto = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -84,7 +86,7 @@
             // errores
             // 
             this.errores.AutoSize = true;
-            this.errores.Location = new System.Drawing.Point(113, 120);
+            this.errores.Location = new System.Drawing.Point(67, 120);
             this.errores.Name = "errores";
             this.errores.Size = new System.Drawing.Size(35, 13);
             this.errores.TabIndex = 5;
@@ -115,12 +117,34 @@
             this.comboBox2.TabIndex = 8;
             this.comboBox2.Text = "y=mx+b";
             // 
+            // solucion
+            // 
+            this.solucion.AutoSize = true;
+            this.solucion.Location = new System.Drawing.Point(69, 188);
+            this.solucion.Name = "solucion";
+            this.solucion.Size = new System.Drawing.Size(35, 13);
+            this.solucion.TabIndex = 9;
+            this.solucion.Text = "label3";
+            this.solucion.Visible = false;
+            // 
+            // intercepto
+            // 
+            this.intercepto.AutoSize = true;
+            this.intercepto.Location = new System.Drawing.Point(69, 210);
+            this.intercepto.Name = "intercepto";
+            this.intercepto.Size = new System.Drawing.Size(35, 13);
+            this.intercepto.TabIndex = 10;
+            this.intercepto.Text = "label3";
+            this.intercepto.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(274, 367);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(274, 241);
+            this.Controls.Add(this.intercepto);
+            this.Controls.Add(this.solucion);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.errores);
@@ -147,6 +171,8 @@
         private System.Windows.Forms.Label errores;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label solucion;
+        private System.Windows.Forms.Label intercepto;
     }
 }
 
